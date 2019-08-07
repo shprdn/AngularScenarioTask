@@ -1,0 +1,6 @@
+<!-- entering the text -->
+<input #inputval type="text">
+<!-- messageLog method is called when button is clicked -->
+<button (click)=messageLog(inputval.value)>Submit</button>
+<!-- component interaction from parent to child using parentdata -->
+<app-component4 [parentData]="inputval.value"></app-component4>

@@ -1,0 +1,7 @@
+<h2>
+    Welcome {{name}}
+</h2>
+<!--enter the text-->
+<input #myInput type="text" >
+<!--on click logMessage will be called-->
+<button (click) = logMessage(myInput.value)>Log</button>
